@@ -2,7 +2,6 @@ package com.learn.projectmitra.servlets;
 
 import com.learn.projectmitra.dao.CollegeDao;
 import com.learn.projectmitra.entities.College;
-import com.learn.projectmitra.entities.Student;
 import com.learn.projectmitra.helper.FactoryProvider;
 import com.learn.projectmitra.helper.SendMail;
 import java.io.File;

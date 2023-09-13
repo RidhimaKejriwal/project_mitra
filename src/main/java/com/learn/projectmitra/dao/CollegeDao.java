@@ -2,6 +2,7 @@ package com.learn.projectmitra.dao;
 
 import com.learn.projectmitra.entities.College;
 import com.learn.projectmitra.entities.Student;
+import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -54,6 +55,24 @@ public class CollegeDao {
             e.printStackTrace();
         }
         return college;
+    }
+    
+    public List<College> getallCollege()
+    {
+        List<College> list = null;
+        College college = null;
+        try
+        {
+            String query = "from College";
+            Session session = this.factory.openSession();
+            Query q = session.createQuery(query);
+            list = q.list();  
+            session.close();   
+        }catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return list;
     }
     
     public boolean saveCollege(College college)

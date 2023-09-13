@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .main{
@@ -12,111 +14,55 @@
 body{
     background-color: black;
 }
-.navbar{
+
+/* NavBar styling */
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
     width: 100%;
-    height: 75px;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    /* background-color: black; */
+    z-index: 5;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    padding: 0px 10px;
+}
+.navbar ul li
+{
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.signup
+{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar ul span
+{
+    font-size: 25px;
 }
 
 .icon{
     width: 200px;
     float: left;
     height: 70px;
-
-}
-
-.logo
-{
-    color: aliceblue;
-    font-size: 35px;
-    font-family: Arial;
-    padding-left: 20px;
-    float: left;
-    padding-top: 10px;
-}
-
-
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-
-}
-
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
-
-}
-
-ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-
-ul li a:hover{
-    color: #ff7200;
-}
-
-.search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
-
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 16.5px;
-    background: transparent;
-    border: 2px solid #ff7200;
-    margin-top: 13px;
-    color: #ffffff;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-
-.btn{
-    width: 100px;
-    height: 40px;
-    background: #ff7200;
-    border: 2px solid #ff7200;
-    margin-top: 13px;
-    color: #000000;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    cursor: pointer;
-    font: bold;
-}
-.btn:hover{
-    background: #ffff;
-    color: #000000;
-}
-.btn:focus{
-    outline: none;
-
-}
-
-.srch:focus{
-    outline: none;
 
 }
 
@@ -185,7 +131,7 @@ ul li a:hover{
     height: 380px;
     background: black;
     position: absolute;
-    top: 10%;
+    top: 35%;
     left: 65%;
 }
 

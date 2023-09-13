@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.Part;
 import org.hibernate.Session;
 
+@MultipartConfig
 public class VerifyStudentServlet extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -25,8 +27,11 @@ public class VerifyStudentServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             //fetch form details..
             String email = request.getParameter("email");
+            System.out.println(email);
             String name = request.getParameter("name");
+            System.out.println(name);
             int collegeId = Integer.parseInt(request.getParameter("collegeId"));
+            System.out.println(collegeId);
             String cpassword = request.getParameter("cpassword");
             String password = request.getParameter("password");
             String weblink = request.getParameter("link");

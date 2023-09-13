@@ -53,32 +53,36 @@ public class VerifyCode extends HttpServlet {
                 } else {
                     out.println("Incorrect verification code");
                 }
-            }
-            Student student = (Student) session.getAttribute("authcode");
-            String code = request.getParameter("authcode");
+            } else if (user.equals("student")) {
+                Student student = (Student) session.getAttribute("authcode");
+                String code = request.getParameter("authcode");
 
-            if (code.equals(student.getVerifyCode())) {
-                try {
-                    String verified = "YES";
+                if (code.equals(student.getVerifyCode())) {
+                    try {
+                        String verified = "YES";
 
-                    student.setVerifyCode(verified);
+                        student.setVerifyCode(verified);
 
-                    Session hibernateSession = FactoryProvider.getFactory().openSession();
-                    Transaction tx = hibernateSession.beginTransaction();
-                    hibernateSession.save(student);
-                    tx.commit();
-                    hibernateSession.close();
+                        Session hibernateSession = FactoryProvider.getFactory().openSession();
+                        Transaction tx = hibernateSession.beginTransaction();
+                        hibernateSession.save(student);
+                        tx.commit();
+                        hibernateSession.close();
+                        
+                        session.removeAttribute("authcode");
 
-                    HttpSession httpSession = request.getSession();
-                    httpSession.setAttribute("message", "Verification successfull !!..");
-                    response.sendRedirect("login.jsp");
-                    return;
-                } catch (Exception e) {
-                    e.printStackTrace();
+                        HttpSession httpSession = request.getSession();
+                        httpSession.setAttribute("message", "Verification successfull !!..");
+                        response.sendRedirect("login.jsp");
+                        return;
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    out.println("Incorrect verification code");
                 }
-            } else {
-                out.println("Incorrect verification code");
             }
+
         }
     }
 
