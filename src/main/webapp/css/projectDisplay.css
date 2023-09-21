@@ -1,0 +1,323 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: black;
+    color: white;
+    /* background-image: url(/photos/bg-stars-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* NavBar styling */
+.navbar
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #24292f;
+    z-index: 5;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    padding: 0px 10px;
+}
+.navbar ul li
+{
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.signup
+{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar ul span
+{
+    font-size: 25px;
+}
+
+.sebar
+{
+    display: flex;
+}
+
+.sebar li input
+{
+    height: 100%;
+    padding: 5px 10px;
+    width: 250px;
+    border-radius: 8px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+body .title
+{
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body .title h1
+{
+    color: #2f81f7;
+    font-size: 25px;
+    font-weight: 600;
+}
+body .title .acnt
+{
+    height: 90%;
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    background: #292f36;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.ab{
+    height: 10%;
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    padding: 5px 10px;
+    background: #292f36;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+body .title .acnt img
+{
+    width: auto;
+    height: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+body .title .acnt p:nth-child(1)
+{
+    color: #2f81f7;
+    font-weight: 600;
+    /* font-size: 1em; */
+    height: 50%;
+}
+body .title .acnt p:nth-child(2)
+{
+    font-weight: 100;
+    /* font-size: 1em; */
+    height: 50%;
+}
+
+body hr
+{
+    color: #24292f;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon
+{
+    width: 100%;
+    /* height: 92%; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    /* background-image: url(/photos/bg-stars-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1
+{
+    width: 80%;
+    /* height: 100%; */
+    /* background: pink; */
+
+    display: flex;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon1
+{
+    width: 75%;
+    /* height: 100%; */
+    /* background: green; */
+    padding: 5px;
+}
+/* .bigcon .con1 .scon1 h1
+{
+    color: #2f81f7;
+} */
+.bigcon .con1 .scon1 hr
+{
+    margin: 2px 0px;
+    color: #24292f;
+}
+.bigcon .con1 .scon1 h3
+{
+    margin: 10px 0px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #e6edf3;
+}
+.bigcon .con1 .scon1 .pd
+{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+}
+.bigcon .con1 .scon1 .pd ul
+{
+    list-style: none;
+}
+
+
+.bigcon .con1 .scon1 .pd ul:nth-child(1)
+{
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    /* background-color: #24292f;
+
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36; */
+}
+.bigcon .con1 .scon1 .pd ul:nth-child(1) span
+{
+    font-size: 20px;
+}
+
+
+.bigcon .con1 .scon1 .pd ul:nth-child(2) li
+{
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    /* border-style: none; */
+    background-color: #24292f;
+    /* color: white; */
+
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36;
+    cursor: pointer;
+}
+.bigcon .con1 .scon1 .dcon
+{
+    width: 100%;
+    height: 60vh;
+    
+    border-radius: 8px;
+    border: 1px solid #24292f;
+
+    overflow-y: scroll;
+}
+.bigcon .con1 .scon1 .fcon
+{
+    width: 100%;
+    height: 60vh;
+    /* background-color: blueviolet; */
+    border-radius: 8px;
+    border: 1px solid #24292f;
+    overflow-y: scroll;
+}
+.bigcon .con1 .scon1 img
+{
+    width: 100%;
+    margin: 5px 0px;
+    border: 1px solid #24292f;
+}
+.bigcon .con1 .scon1 iframe
+{
+    width: 100%;
+    border: 1px solid #24292f;
+    margin: 5px 0px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2
+{
+    width: 25%;
+    /* height: 100%; */
+    /* background: red; */
+    padding: 5px;
+}
+.bigcon .con1 .scon2 .abt
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.bigcon .con1 .scon2 .abt h1
+{
+    font-weight: 600;
+    font-size: 18px;
+    color: #e6edf3;
+}
+.bigcon .con1 .scon2 hr
+{
+    margin: 2px 0px;
+    color: #24292f;
+}
+.bigcon .con1 .scon2 .abtd ul
+{
+    list-style: none;
+}
+.bigcon .con1 .scon2 .abtd ul li
+{
+    height: 20px;
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #7d8590;
+}
+.bigcon .con1 .scon2 h1
+{
+    font-weight: 600;
+    font-size: 18px;
+    color: #e6edf3;
+    margin: 10px 0px;
+}
+.bigcon .con1 .scon2 .lacon
+{
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+    color: #7d8590;
+    margin: 10px 0px;
+}

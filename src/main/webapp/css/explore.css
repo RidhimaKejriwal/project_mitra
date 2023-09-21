@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+body
+{
+    width: 100%;
+    background-color: black;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* NavBar styling */
+.navbar
+{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 10vh;
+    min-height: 77.75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 5;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    padding: 0px 10px;
+}
+.navbar ul li
+{
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.signup
+{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar ul span
+{
+    font-size: 25px;
+}
+
+.navbar .sbox
+{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .sbox input
+{
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background-color: #24292f;
+    color: white;
+    border-radius: 8px;
+}
+
+.navbar .sbox span
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #24292f;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container1
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.tcon
+{
+    width: 80%;
+    display: flex;
+    gap: 50px;
+}
+.tcon .sc1
+{
+    width: 33.33%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    border-radius: 50px;
+    background: #e830ef;
+    box-shadow: 0px 0px 20px #e310ee;
+    /* box-shadow:  10px 10px 20px #7d83d9,
+             -10px -10px 20px #a9b1ff; */
+}
+.tcon .sc1 p:nth-child(1)
+{
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+}
+.tcon .sc1 p:nth-child(2)
+{
+    font-size: 25px;
+}
+.tcon .sc2
+{
+    width: 33.33%;
+    min-height: 200px;
+    border-radius: 50px;
+    background: #3989de;
+    box-shadow: 0px 0px 20px #138bee;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* box-shadow:  10px 10px 20px #6bc473,
+             -10px -10px 20px #91ff9b; */
+}
+
+.tcon .sc2 p:nth-child(1)
+{
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+}
+.tcon .sc2 p:nth-child(2)
+{
+    font-size: 25px;
+}
+.tcon .sc3
+{
+    width: 33.33%;
+    min-height: 200px;
+
+    border-radius: 50px;
+    background: #f2811e;
+    box-shadow: 0px 0px 20px #ee7a27;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* box-shadow:  10px 10px 20px #8b60d2,
+             -10px -10px 20px #bb82ff; */
+}
+
+
+.tcon .sc3 p:nth-child(1)
+{
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+}
+.tcon .sc3 p:nth-child(2)
+{
+    font-size: 25px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.bigcon
+{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.filtercon
+{
+    width: 25%;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* background: violet; */
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.filtercon .appfilt
+{
+    width: 100%;
+    background-color: #24292f;
+    border-radius: 8px;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+}
+.filtercon .appfilt p:nth-child(1)
+{
+    text-align: center;
+    padding: 5px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #2f81f7;
+}
+.filtercon .appfilt .fs
+{
+    width: 100%;
+    max-height: 200px;
+    padding: 5px 10px;
+    overflow-y: scroll;
+}
+.filtercon .appfilt .fs ul
+{
+    list-style: none;
+}
+.filtercon .appfilt .fs ul li
+{
+    height: 10%;
+    font-size: 19px;
+}
+.filtercon .appfilt .fs ul li input
+{
+    margin-right: 5px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.filtercon .langcon
+{
+    width: 100%;
+    background-color: #24292f;
+    border-radius: 8px;
+    border: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+}
+.filtercon .langcon p:nth-child(1)
+{
+    text-align: center;
+    padding: 5px 0px;
+
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: #2f81f7;
+}
+.filtercon .langcon form
+{
+    width: 100%;
+    height: 200px;
+    padding: 5px 10px;
+    overflow-y: scroll;
+}
+.filtercon .langcon form ul
+{
+    list-style: none;
+}
+.filtercon .langcon form ul li
+{
+    height: 10%;
+    font-size: 19px;
+}
+.filtercon .langcon form ul li input
+{
+    margin-right: 5px;
+}
+.filtercon .langcon .apf
+{
+    display: flex;
+    justify-content: end;
+    padding: 5px 10px;
+}
+.filtercon .langcon .apf p
+{
+
+    padding: 5px 10px;
+    background-color: #2f81f7;
+    border: 1px solid white;
+
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36;
+
+    border-radius: 8px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.showcon
+{
+    width: 75%;
+    height: 20px;
+}
+
+
+.showcon .cnavs1
+{
+    width: 100%;
+    min-height: 60px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* color: white; */
+    /* border-bottom: 1px solid grey; */
+    border-radius: 8px;
+    background-color: #24292f;
+}
+
+
+.showcon .cnavs1 ul
+{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.showcon .cnavs1 ul a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.showcon .cnavs1 ul a li
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.showcon .cnavs1 ul a li
+{
+    font-size: 20px;
+}
+.showcon .cnavs1 ul a:nth-child(1) li
+{
+    border-bottom: 2px solid #f78166;
+    
+}
+
+.showcon .cnavs1 ul a li span
+{
+    padding: 0px 3px;
+}
+
+
+
+
+.stcon
+{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid grey;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+
+    background-color: #212121;
+
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.cinfo
+{
+    width: 100%;
+    height: 80%;
+    padding: 5px;
+
+    display: flex;
+    gap: 10px;
+}
+.cinfo .spp
+{
+    height: 100%;
+    width: 83.2833px;
+}
+.cinfo .spp img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cinfo .pnam h3
+{
+    color: #2f81f7;
+    font-size: 25px;
+}
+.cinfo .pnam h5
+{
+    font-weight: 300;
+    color: #e6edf3;
+    font-size: 20px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.cardicons
+{
+    width: 100%;
+    height: 20%;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+.cardicons ul
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.cardicons ul li
+{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.cardicons ul li span
+{
+    font-size: 20px;
+}
+.cardicons ul li h5
+{
+    font-weight: 300;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.prcon
+{
+    width: 100%;
+    height: 150px;
+    border-bottom: 1px solid grey;
+    color: white;
+    padding: 10px;
+    margin: 10px 0px;
+
+    background-color: #212121;
+}
+
+.pinfor
+{
+    width: 100%;
+    height: 80%;
+}
+.pinfor h3
+{
+    color: #2f81f7;
+}
+.pinfor h4
+{
+    font-weight: 300;
+    color: #e6edf3;
+}
+.pcardicons
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.pcardicons ul
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.pcardicons ul li
+{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.pcardicons ul li span
+{
+    font-size: 20px;
+}
+.pcardicons ul li h5
+{
+    font-weight: 300;
+}

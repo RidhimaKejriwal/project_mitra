@@ -42,6 +42,8 @@ public class VerifyStudentServlet extends HttpServlet {
             int following = 0;
             Part part = request.getPart("pic");
             String pic = part.getSubmittedFileName();
+            String year = request.getParameter("year");
+            String branch = request.getParameter("branch");
 
             Session s = FactoryProvider.getFactory().openSession();
             HttpSession httpSession = request.getSession();
@@ -65,6 +67,8 @@ public class VerifyStudentServlet extends HttpServlet {
             }
 
             Student student1 = new Student(name, userName, email, collegeId, pic, profession, address, password, weblink, followers, following, code);
+            student1.setYear(year);
+            student1.setBranch(branch);
             if (pic.equals("")) {
                 student1.setStudentImage("default.png");
 //                System.out.println("if block");

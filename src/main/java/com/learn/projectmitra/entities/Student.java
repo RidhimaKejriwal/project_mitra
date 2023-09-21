@@ -20,9 +20,12 @@ public class Student {
     private String weblink;
     private int followers;
     private int following;
+    private int projects;
     private String VerifyCode;
     private String address;
     private String profession;
+    private String year;
+    private String Branch;
 
     public int getStudentId() {
         return studentId;
@@ -112,6 +115,14 @@ public class Student {
         this.following = following;
     }
 
+    public int getProjects() {
+        return projects;
+    }
+
+    public void setProjects(int projects) {
+        this.projects = projects;
+    }
+
     public String getAddress() {
         return address;
     }
@@ -126,6 +137,22 @@ public class Student {
 
     public void setProfession(String profession) {
         this.profession = profession;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getBranch() {
+        return Branch;
+    }
+
+    public void setBranch(String Branch) {
+        this.Branch = Branch;
     }
 
     public Student() {

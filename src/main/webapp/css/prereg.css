@@ -1,0 +1,184 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../img/bg-stars-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.navbar
+{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #24292f;
+    z-index: 5;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    padding: 0px 10px;
+}
+.navbar ul li
+{
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.signup
+{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar ul span
+{
+    font-size: 25px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.container1
+{
+    width: 100%;
+    height: 92%;
+    display: flex;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+.container2
+{
+    width: 50%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: bisque; */
+}
+.vdo
+{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vdo video
+{
+    width: 300px;
+    height: 300px;
+}
+
+.subcontainer
+{
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+
+}
+.subcontainer h1
+{
+    font-size: 45px;
+}
+.subcontainer .span1
+{
+    color: #ac49f1;
+}
+
+.subcontainer .span2
+{
+    color: #1ab2ff;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+.container3
+{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+.subc1
+{
+    width: 50%;
+    height: 30%;
+    border-radius: 20px;
+    border-right: thin solid #24292f;
+    border-bottom: thin solid #24292f;
+
+    background: rgba(255, 255, 255, 0.200);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border: 4px solid linear-gradient(87deg, rgba(26,178,255,1) 0%, rgba(172,73,241,1) 100%);
+}
+
+.subc1 h2
+{
+    font-size: 30px;
+    margin: 10px 0px;
+    color: white;
+}
+.opts
+{
+    width: 50%;
+    height: 40%;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.subc1 .opts a
+{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 12px;
+    color: white;
+
+}
+.subc1 .opts a:nth-child(1)
+{
+    background-color: #ac49f1;
+
+    box-shadow:  -5px 5px 20px #923ecd,
+                5px -5px 20px #c654ff;
+}
+.subc1 .opts a:nth-child(2)
+{
+    background-color: #1ab2ff;
+
+    box-shadow:  -5px 5px 20px #1697d9,
+             5px -5px 20px #1ecdff;
+}

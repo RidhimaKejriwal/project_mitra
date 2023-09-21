@@ -59,7 +59,7 @@
                 <div class="subcont2">
                     <div class="sub-subcont3"></div>
                     <div class="sub-subcont4">
-                        <h1><span>Showcase</span> Your</h1>
+                        <h1 style="margin-top: 22vh;"><span>Showcase</span> Your</h1>
                         <h1>Profile and</h1>
                         <h1>Projects.</h1>
                     </div>
@@ -83,11 +83,8 @@
                 <div class="subcont2">
                     <div class="sub-subcont3"></div>
                     <div class="sub-subcont4">
-                        <h1><span>Collaborate</span></h1>
-                        <h1>with</h1>
-                        <h1>Friends</h1>
-                        <h1>and <span>Share</span></h1>
-                        <h1>Projects.</h1>
+                        <h1 style="margin-top: 40vh;"><span>Collaborate</span> with Friends</h1>
+                        <h1>and <span>Share</span> Projects.</h1>
                     </div>
                 </div>
             </div>
@@ -128,10 +125,17 @@
         <!-- NavBar -->
         <div class="navbar">
             <ul>
-                <span class="material-symbols-outlined">rocket</span>
-                <li>Services</li>
+                <a href="/projectMitra/" style="text-decoration: none; color: white;"><span class="material-symbols-outlined">rocket</span></a>
+                <li>Prarambh</li>
+                <li><a href="explore.jsp">Explore</a></li>
             </ul>
             <ul>
+                <form action="explore.jsp" method="post" role="search">
+                    <div class="sebar">
+                        <li><input type="search" name="ch" placeholder="Search here"></li>
+                        <!--<button type="submit">Search</button>-->
+                    </div>  
+                </form>
                 <li><a href="login.jsp">Login</a></li>
                 <li class="signup"><a href="signup.jsp">Sign up</a></li>
             </ul>

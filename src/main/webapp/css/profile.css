@@ -1,0 +1,374 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    /* font-weight: 600; */
+}
+
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #0d1117;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.navbar
+{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #24292f;
+    z-index: 5;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    padding: 0px 10px;
+}
+.navbar ul li
+{
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.sebar
+{
+    display: flex;
+}
+
+.sebar li input
+{
+    height: 100%;
+    padding: 5px 10px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.signup
+{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar ul span
+{
+    font-size: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container1
+{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container2
+{
+    width: 80%;
+    height: 95%;
+    display: flex;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container3
+{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container3 .pp
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.container3 .pp img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.container3 .pinfo
+{
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    color: whitesmoke;
+}
+.container3 .pinfo h1
+{
+    font-weight: 600;
+}
+.container3 .pinfo h3
+{
+    font-weight: 300;
+}
+.container3 .pinfo h5{
+    font-weight: 400;
+}
+
+.container3 .pinfo button
+{
+    width: 90%;
+    height: 35px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    background-color: #2f81f7;
+    color: whitesmoke;
+    margin: 20px 0px;
+    
+}
+.container3 .pinfo h2
+{
+    font-weight: 500;
+}
+
+.container3 .pinfo .folfol
+{
+    display: flex;
+    align-items: center;
+    margin: 15px 0px;
+}
+.container3 .pinfo .folfol h5
+{
+    font-weight: 400;
+}
+.container3 .pinfo .folfol h5 span
+{
+    font-weight: 400;
+    font-size: 16px;
+}
+.container3 .pinfo .adrs
+{
+    display: flex;
+    align-items: center;
+}
+.container3 .pinfo .adrs span
+{
+    font-size: 20px;
+}
+.container3 .pinfo .adrs h4
+{
+    font-weight: 300;
+    margin: 0px 5px;
+}
+
+.container3 .pinfo .social
+{
+    display: flex;
+    align-items: center;
+}
+.container3 .pinfo .social span
+{
+    font-size: 20px;
+}
+.container3 .pinfo .social a
+{
+    color: white;
+    margin: 0px 5px;
+    text-decoration: none;
+    font-weight: 300;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.container4
+{
+    width: 70%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cnav
+{
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid grey;
+}
+/* f78166 */
+.cnavs1 ul
+{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.cnavs1 ul a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.cnavs1 ul a li
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+/*.cnavs1 ul a:nth-child(1) li
+{
+    border-bottom: 2px solid #f78166;
+}*/
+/* .cnavs1 ul a:hover li
+{
+    border-bottom: 2px solid #f78166;
+} */
+.cnavs1 ul a li span
+{
+    padding: 0px 3px;
+}
+/* ------------------------------------ */
+.cnavs2 ul
+{
+    list-style: none;
+}
+.cnavs2 ul a
+{
+    color: white;
+    text-decoration: none;
+}
+.cnavs2 ul a li
+{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #39d353;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow:  -5px 5px 10px #2a9c3da0,
+            5px -5px 10px #48ff69a3;
+}
+.cnavs2 ul a li span
+{
+    padding: 0px 3px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.pcon
+{
+    width: 100%;
+    height: 90%;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.menu-bar
+{
+    width: 100%;
+    height: 10%;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.option1
+{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #24292f;
+    color: white;
+
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36;
+}
+.option2
+{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #24292f;
+    color: white;
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.cards
+{
+    width: 100%;
+    height: 20vh;
+    border-top: 1px solid grey;
+}
+.card1
+{
+    width: 100%;
+    height: 20vh;
+    border-bottom: 1px solid grey;
+    color: white;
+    padding: 10px;
+}
+.cinfo
+{
+    width: 100%;
+    height: 80%;
+}
+.cinfo h3
+{
+    color: #2f81f7;
+}
+.cinfo h4
+{
+    font-weight: 300;
+    color: #e6edf3;
+}
+.cardicons
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+.cardicons ul
+{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.cardicons ul li
+{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.cardicons ul li span
+{
+    font-size: 20px;
+}
+.cardicons ul li h5
+{
+    font-weight: 300;
+}
+

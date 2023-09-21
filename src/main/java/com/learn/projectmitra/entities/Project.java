@@ -1,5 +1,6 @@
 package com.learn.projectmitra.entities;
 
+import java.sql.Timestamp;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,11 +14,15 @@ public class Project {
     private String projectName;
     private int StudentId;
     private int collegeId;
-    private String projectImage;
+    private int likes;
+    private Timestamp submitDate;
+    private String projectDescription;
     private String videolink;
-    private String zipFolder;
     private String projectCategory;
     private String projectLanguage;
+    private String projectImage1;
+    private String projectImage2;
+    private String projectReport;
 
     public int getProjectId() {
         return projectId;
@@ -51,12 +56,28 @@ public class Project {
         this.collegeId = collegeId;
     }
 
-    public String getProjectImage() {
-        return projectImage;
+    public int getLikes() {
+        return likes;
     }
 
-    public void setProjectImage(String projectImage) {
-        this.projectImage = projectImage;
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public Timestamp getSubmitDate() {
+        return submitDate;
+    }
+
+    public void setSubmitDate(Timestamp submitDate) {
+        this.submitDate = submitDate;
+    }
+
+    public String getProjectDescription() {
+        return projectDescription;
+    }
+
+    public void setProjectDescription(String projectDescription) {
+        this.projectDescription = projectDescription;
     }
 
     public String getVideolink() {
@@ -65,14 +86,6 @@ public class Project {
 
     public void setVideolink(String videolink) {
         this.videolink = videolink;
-    }
-
-    public String getZipFolder() {
-        return zipFolder;
-    }
-
-    public void setZipFolder(String zipFolder) {
-        this.zipFolder = zipFolder;
     }
 
     public String getProjectCategory() {
@@ -91,7 +104,43 @@ public class Project {
         this.projectLanguage = projectLanguage;
     }
 
+    public String getProjectImage1() {
+        return projectImage1;
+    }
+
+    public void setProjectImage1(String projectImage1) {
+        this.projectImage1 = projectImage1;
+    }
+
+    public String getProjectImage2() {
+        return projectImage2;
+    }
+
+    public void setProjectImage2(String projectImage2) {
+        this.projectImage2 = projectImage2;
+    }
+
+    public String getProjectReport() {
+        return projectReport;
+    }
+
+    public void setProjectReport(String projectReport) {
+        this.projectReport = projectReport;
+    }
+    
+    
+
     public Project() {
+    }
+
+    public Project(String projectName, int StudentId, int collegeId, String projectDescription, String videolink, String projectCategory, String projectLanguage) {
+        this.projectName = projectName;
+        this.StudentId = StudentId;
+        this.collegeId = collegeId;
+        this.projectDescription = projectDescription;
+        this.videolink = videolink;
+        this.projectCategory = projectCategory;
+        this.projectLanguage = projectLanguage;
     }
     
     

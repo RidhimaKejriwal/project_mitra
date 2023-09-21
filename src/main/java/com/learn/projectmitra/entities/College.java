@@ -18,6 +18,7 @@ public class College {
     private String collegeAddress;
     private String userName;
     private String weblink;
+    private int projects;
     private int followers;
     private int following;
     private String password;
@@ -109,6 +110,14 @@ public class College {
 
     public void setFollowing(int following) {
         this.following = following;
+    }
+
+    public int getProjects() {
+        return projects;
+    }
+
+    public void setProjects(int projects) {
+        this.projects = projects;
     }
 
     public String getVerifyCode() {

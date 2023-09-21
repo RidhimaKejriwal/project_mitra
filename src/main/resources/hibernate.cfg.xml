@@ -15,6 +15,10 @@
         <mapping class="com.learn.projectmitra.entities.College"/>
         <mapping class="com.learn.projectmitra.entities.Student"/>
         <mapping class="com.learn.projectmitra.entities.Project"/>
+        <mapping class="com.learn.projectmitra.entities.Follow"/>
+        <mapping class="com.learn.projectmitra.entities.Files"/>
+        <mapping class="com.learn.projectmitra.entities.LikebyStudent"/>
+        <mapping class="com.learn.projectmitra.entities.LikebyCollege"/>
         
     </session-factory>
 </hibernate-configuration>

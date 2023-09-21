@@ -1,0 +1,308 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    /* background-image: url(/photos/bg-stars-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* NavBar styling */
+.navbar
+{
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #24292f;
+    z-index: 5;
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    padding: 0px 10px;
+}
+.navbar ul li
+{
+    padding: 5px 12px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.signup
+{
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+.navbar ul span
+{
+    font-size: 25px;
+}
+
+.sebar
+{
+    display: flex;
+}
+
+.sebar li input
+{
+    height: 100%;
+    padding: 5px 10px;
+    width: 250px;
+    border-radius: 8px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon
+{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/bg-stars-1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1
+{
+    width: 80%;
+    height: 95%;
+
+    display: flex;
+}
+
+.bigcon .con1 .scon1
+{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bigcon .con1 .scon1 .vdo video
+{
+    width: 300px;
+    height: 300px;
+}
+.bigcon .con1 .scon1 .img img
+{
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2
+{
+    width: 65%;
+    height: 100%;
+    /* background: violet; */
+    color: white;
+    padding: 20px;
+    border: 1px solid #292f36;
+    border-radius: 8px;
+}
+
+
+.bigcon .con1 .scon2 .frm
+{
+    width: 100%;
+    height: 100%;
+
+}
+
+.bigcon .con1 .scon2 .frm form
+{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2 .frm form .prjtnm
+{
+    width: 100%;
+}
+
+.bigcon .con1 .scon2 .frm form .prjtnm p
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bigcon .con1 .scon2 .frm form .prjtnm input
+{
+    width: 50%;
+    height: 35px;
+    background: transparent;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid #292f36;
+    padding: 5px 10px;
+    margin: 2px 0px;
+
+    background: linear-gradient(145deg, #252a31, #2c323a);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2 .frm form .btns
+{
+    width: 100%;
+    height: 10%;
+    /* padding: 15px 0px; */
+    border-top: 2px solid #292f36;
+    border-bottom: 2px solid #292f36;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bigcon .con1 .scon2 .frm form .btns .opt .option1
+{
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    background-color: #24292f;
+
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36;
+}
+
+.bigcon .con1 .scon2 .frm form .btns .opt .option2
+{
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #24292f;
+    color: white;
+    box-shadow:  20px 20px 60px #1f2328,
+            -20px -20px 60px #292f36;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+.bigcon .con1 .scon2 .frm form .bcon
+{
+    width: 100%;
+}
+
+.bigcon .con1 .scon2 .frm form .bcon p
+{
+    font-size: 20px;
+    padding: 5px 0px;
+    font-weight: bold;
+}
+
+.bigcon .con1 .scon2 .frm form .bcon input::file-selector-button{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-style: none;
+    color: white;
+    /* background-color: #24292f;
+
+    box-shadow:  20px 20px 40px #1f2328,
+            -20px -20px 40px #292f36; */
+    background: #1ab2ff;
+    box-shadow:  20px 20px 60px #1697d9,
+                -20px -20px 60px #1ecdff;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2 .frm form .descrpt p
+{
+    font-size: 20px;
+    padding: 5px 0px;
+    color: white;
+    font-weight: bold;
+}
+
+.bigcon .con1 .scon2 .frm form .descrpt textarea
+{
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #252a31, #2c323a);
+    box-shadow:  5px 5px 20px #23282e,
+             -5px -5px 20px #2f363e;
+    color: white;
+    padding: 4px;
+    margin: 2px 0px;
+}
+
+.bigcon .con1 .scon2 .frm form .descrpt textarea::placeholder
+{
+    font-weight: 300;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2 .frm form .ylnk p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bigcon .con1 .scon2 .frm form .ylnk input
+{
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 2px 0px;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid #292f36;
+
+    background: linear-gradient(145deg, #252a31, #2c323a);
+
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------- */
+
+.bigcon .con1 .scon2 .frm form .sbmt p
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.bigcon .con1 .scon2 .frm form .sbmt button
+{
+    margin: 10px 0px;
+    width: 40%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 12px;
+    border-style: none;
+    color: white;
+
+    background: linear-gradient(145deg, #17a0e6, #1cbeff);
+    
+}
+
